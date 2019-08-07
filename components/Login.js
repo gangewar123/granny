@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, Dimensions, StyleSheet } from 'react-native';
+import { View, Text, Image, Dimensions, StyleSheet, KeyboardAvoidingView } from 'react-native';
 import Myform from './Myform'
 
 export default class Login extends Component {
@@ -11,15 +11,15 @@ export default class Login extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
+            <KeyboardAvoidingView behavior='padding' style={styles.container}>
                 <View style={styles.logocontainer}>
-                    <Text> Login </Text>
                     <Image style={styles.logo} source={{ uri: 'https://payload.cargocollective.com/1/0/21154/8811319/Santa-to-portfolio.gif', }} />
+                    <Text> Login </Text>
                 </View>
                 <View style={styles.myform}>
                     <Myform />
                 </View>
-            </View>
+            </KeyboardAvoidingView>
 
         );
     }
