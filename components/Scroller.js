@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, StyleSheet, Dimensions } from 'react-native';
 import Login from './Login';
+import { Chat } from './Chat';
 
 export default class Scroller extends Component {
     render() {
@@ -10,7 +11,7 @@ export default class Scroller extends Component {
                     <Text style={styles.innerText}> This is my </Text>
                 </View>
                 <View style={[styles.outer, styles.green]}>
-                    <Text style={styles.innerText}> first  </Text>
+                    {/* <Chat /> */}
                 </View>
                 <View style={[styles.outer, styles.red]}>
                     <Text style={styles.innerText}> last </Text>
